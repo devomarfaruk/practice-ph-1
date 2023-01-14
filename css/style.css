@@ -250,3 +250,59 @@ footer {
     cursor: pointer;
     margin-right: 5px;
 }
+
+
+
+@media (max-width: 600px) {
+    body {
+        width: 600px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav-list ul li.cmn {
+        display: none;
+    }
+
+    .features {
+        padding: 0 20px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        padding-top: 30px;
+    }
+
+    .features img {
+        width: 60px;
+    }
+
+    .product-list {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .banner {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .header-detail {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header-title {
+        font-size: 32px;
+    }
+
+    .header-des {
+        font-size: 14px;
+    }
+
+    .header-img {
+        width: 300px;
+    }
+
+    .header-img img {
+        width: 100%;
+    }
+}
