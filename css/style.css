@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap');
+
+
+/*-----------
+ common css
+ ----------- */
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+/* -----------
+nav start here
+-------------- */
+header {
+    width: 100%;
+    height: 90vh;
+}
+
+.navbar {
+    padding: 50px 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-logo {
+    font-weight: 700;
+    font-size: 24px;
+    color: #3A3A3A;
+}
+
+.nav-list ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-list ul li {
+    padding: 8px 10px;
+    margin: 0 10px;
+    position: relative;
+}
+
+.nav-list ul li.bar {
+    display: none;
+}
+
+.nav-list ul li i {
+    font-size: 24px;
+}
+
+.nav-list ul li::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 0%;
+    height: 3px;
+    background-color: #E02C6D;
+    transition: .5s;
+}
+
+.nav-list ul li:hover::after {
+    width: 100%;
+}
+
+.nav-list ul li a {
+    color: #3A3A3A;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+/* header start here */
+.header-detail {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.header-title {
+    font-weight: 700;
+    font-size: 52px;
+    color: #3A3A3A;
+    margin-bottom: 16px;
+}
+
+.header-des {
+    color: #3A3A3A;
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 16px;
+}
+
+.header-btn {
+    background: #E02C6D;
+    border-radius: 41px;
+    padding: 10px 24px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 16px;
+    border-color: transparent;
+    transition: .5s;
+}
+
+.header-btn i {
+    margin-left: 6px;
+}
+
+.header-btn:hover {
+    color: #E02C6D;
+    background-color: transparent;
+    border-color: #E02C6D;
+}
+
+/* -----------
+main section start
+-------------- */
+
+.features {
+    padding: 0 180px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+/* products section start
+-------------------------- */
+
+.products {
+    padding: 80px 196px;
+}
+
+.product-title {
+    font-weight: 600;
+    font-size: 28px;
+    text-align: center;
+    color: #3A3A3A;
+    margin-bottom: 60px;
+}
+
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 42px;
+}
+
+.list-1 {
+    padding: 15px;
+    border-radius: 10px;
+    width: 329px;
+    height: 445px;
+    box-shadow: 5px 5px 50px rgba(192, 192, 192, 0.733);
+}
+
+.list-1 h2 {
+    color: #18191F;
+    font-size: 28px;
+}
+
+.list-1 img {
+    width: 300px;
+    height: 256px;
+}
+
+.list-1 p {
+    color: #787885;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.list-1 i {
+    color: goldenrod;
+}
+
+.product-more {
+    text-align: right;
+    color: #E02C6D;
+    padding: 10px 30px;
+    margin-top: 40px;
+}
+
+/* -------
+banner start here
+-------------- */
+
+.banner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 80px 160px;
+    align-items: center;
+}
+
+.banner-title {
+    font-weight: 700;
+    font-size: 35px;
+    color: #0A0826;
+    margin-bottom: 16px;
+
+}
+
+.banner-des {
+    font-weight: 700;
+    font-size: 16px;
+    color: #6C6C6C;
+    margin-bottom: 16px;
+}
+
+/* footer start here 
+----------------------*/
+footer {
+    background-color: #0A0826;
+    height: 300px;
+    width: 100%;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-content {
+    color: #fff;
+    text-align: center;
+}
+
+.footer-title {
+    margin-bottom: 16px;
+}
+
+.footer-des {
+    margin-bottom: 10px;
+}
+
+.icons i {
+    font-size: 16px;
+    padding-right: 10px;
+    cursor: pointer;
+    margin-right: 5px;
+}
